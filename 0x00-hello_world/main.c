@@ -8,5 +8,5 @@ ulien@ubuntu:~/c/0x00$ cat main.c
  */
 int main(void)
 {
-    return (0);
+return (0);
 }
