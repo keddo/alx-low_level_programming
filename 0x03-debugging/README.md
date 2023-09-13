@@ -8,3 +8,5 @@ Task 2. 0 > 972?
 This program prints the largest of three integers.
 
 
+Task 3. Leap year
+This program converts a date to the day of year and determines how many days are left in the year, taking leap year into consideration.Output looks good for 04/01/1997! Let’s make a new main file 3-main_b.c to try a case that is a leap year: 02/29/2000.
