@@ -41,3 +41,7 @@ Task 8. I'm federal agent Jack Bauer, and today is the longest day of my life Wr
 
 Prototype: void jack_bauer(void);
 You can listen to this soundtrack while coding :)
+Task 9. Learn your times table Write a function that prints the 9 times table, starting with 0.
+
+Prototype: void times_table(void);
+Format: see example
