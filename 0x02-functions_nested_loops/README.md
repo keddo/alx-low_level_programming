@@ -48,3 +48,7 @@ Format: see example
 10. a + b Write a function that adds two integers and returns the result.
 
 Prototype: int add(int, int);
+[master 1dff4af] Write a function that adds two integers and returns the result.
+ 3 files changed, 30 insertions(+)
+ create mode 100644 0x02-functions_nested_loops/10-add.c
+ create mode 100644 0x02-functions_nested_loops/10-main.c
