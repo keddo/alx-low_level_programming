@@ -52,3 +52,12 @@ Prototype: int add(int, int);
  3 files changed, 30 insertions(+)
  create mode 100644 0x02-functions_nested_loops/10-add.c
  create mode 100644 0x02-functions_nested_loops/10-main.c
+Task 11. 98 Battery Street, the OG
+Write a function that prints all natural numbers from n to 98, followed by a new line.
+
+Prototype: void print_to_98(int n);
+Numbers must be separated by a comma, followed by a space
+Numbers should be printed in order
+The first printed number should be the number passed to your function
+The last printed number should be 98
+You are allowed to use the standard library
