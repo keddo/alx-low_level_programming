@@ -1,32 +1,48 @@
 #include "main.h"
+
 /**
-*cap_string - function that capitalize first character of a word
-*@str: string to capitalize
-*Return:returns the capitalized string
-*/
-char *cap_string(char *str)
+ *separ - checks if a character is a separator
+ *@c: the character to check
+ *Return: escape
+ */
+
+int separ(int c)
 {
-	int index = 0;
+	return (c == ' ' || c == '\n' || c == ',' || c == ';' || c == '!'
+			|| c == '?' || c == '"' || c == '(' || c == ')'
+			|| c == '{' || c == '}' || c == '\t' || c == '.');
+}
 
-	while (str[++index])
+/**
+ *is_lower - checks if a character is lower case
+ *@c: the character in hand
+ *Return: 1 if true else 0
+ */
+
+int	is_lower(int c)
+{
+	return (c >= 'a' && c <= 'z');
+}
+
+/**
+ *cap_string - capitalizes all words of the string
+ *@s: the string to capitalize
+ *Return: return the capitalized string
+ */
+
+
+char *cap_string(char *s)
+{
+	int i = 0;
+
+	if (s[i] && is_lower(s[i]))
+		s[i] -= 32;
+	i++;
+	while (s[i])
 	{
-		while (!(str[index] >= 'a' && str[index] <= 'z'))
-			index++;
-
-		if (str[index - 1] == ' ' ||
-				str[index - 1] == '\t' ||
-				str[index - 1] == '\n' ||
-				str[index - 1] == ',' ||
-				str[index - 1] == ';' ||
-				str[index - 1] == '.' ||
-				str[index - 1] == '!' ||
-				str[index - 1] == '?' ||
-				str[index - 1] == '"' ||
-				str[index - 1] == '(' ||
-				str[index - 1] == ')' ||
-				str[index - 1] == '{' ||
-				str[index - 1] == '}')
-			str[index] -= 32;
+		if (separ(s[i]) && s[i + 1] && is_lower(s[i + 1]))
+			s[i + 1] -= 32;
+		i++;
 	}
-	return (str);
+	return (s);
 }
