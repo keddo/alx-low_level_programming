@@ -1,23 +1,40 @@
 #include "main.h"
+
 /**
-* leet - function that encode a string
-*@str:string that will be encoded
-*Return:returns encoded string
-*/
+ *get_char - gets the code of the letter
+ *@c: the letter in hand
+ *Return: the encoding
+ */
 
-char *leet(char *str)
+int	get_char(int c)
 {
-	int index1 = 0, index2;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	char *leet = "aAeEoOtTlL";
+	char *bin = "4433007711";
+	int i = 0;
 
-	while (str[++index1])
+	while (leet[i])
 	{
-		for (index2 = 0; index2 <= 7; index2++)
-		{
-			if (str[index1] == leet[index2] ||
-			 str[index1] - 32 == leet[index2])
-				str[index1] = index2 + '0';
-		}
+		if (leet[i] == c)
+			return (bin[i]);
+		i++;
 	}
-	return (str);
+	return (c);
+}
+
+/**
+ *leet - encodes a string in 1337
+ *@s: the string to encode
+ *Return: returns the encoded string
+ */
+
+char	*leet(char *s)
+{
+	int i = 0;
+
+	while (s[i])
+	{
+		s[i] = get_char(s[i]);
+		i++;
+	}
+	return (s);
 }
