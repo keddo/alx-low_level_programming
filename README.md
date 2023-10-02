@@ -84,7 +84,7 @@ To access any project you are willing to view , please proceed like this:
 
 ## Aknowledgements
 
-All work contained in this project was completed as part of the curriculum for ALX Africa Software Engineering program built upon Holberton School projects and materials. Holberton School is a campus-based full-stack software engineering program that prepares students for careers in the tech industry using project-based peer learning. 
+All work contained in this project was completed as part of the curriculum for ALX Africa Software Engineering program built upon ALX projects and materials. ALX School is an online-based full-stack software engineering program that prepares students for careers in the tech industry using project-based peer learning. 
 
 
 ## Credits 
