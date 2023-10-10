@@ -5,7 +5,7 @@
  * *the file it was compiled from
  * *
  * *Return: nothing to be returned
- * */
+ **/
 
 int main(void)
 {
