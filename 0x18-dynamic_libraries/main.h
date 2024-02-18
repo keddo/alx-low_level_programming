@@ -1,5 +1,5 @@
-#ifndef __MAIN__
-#define __MAIN__
+#ifndef __MAIN__H__
+#define __MAIN__H__
 
 int _putchar(char c);
 int _islower(int c);
@@ -23,5 +23,4 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 int nrandom();
 
-
-#endif /* __MAIN__ */
+#endif /* __MAIN__H__ */
